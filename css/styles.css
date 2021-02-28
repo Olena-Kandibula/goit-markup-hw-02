@@ -5,7 +5,10 @@
   --brand-title-color: #212121;
   --brend-accent-color: #2196f3;
   --dark-theame-color: #2f303a;
-  --background-color-main: #ffffff;
+  --light-theame-color: #f5f4fa;
+  --white-color: #ffffff;
+  --black-color: #000000;
+
   --background-color-botton-hover: #188ce8;
 }
 
@@ -43,12 +46,16 @@ body {
   font-family: inherit;
   cursor: pointer;
 }
+.logical-title {
+  /* visibility: hidden; */
+  display: none;
+}
 /* ==========END COMPONENTS========== */
 
 /* ==============HEADER========== */
 
 .header-logo {
-  color: #000000;
+  color: var(--black-color);
 }
 
 .navigation-link,
@@ -85,7 +92,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white-color);
 }
 .hero-button {
   font-weight: 700;
@@ -94,7 +101,7 @@ body {
   /* display: flex; */
   /* align-items: center; */
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--white-color);
   background-color: var(--brend-accent-color);
 }
 .hero-button:hover,
@@ -104,8 +111,10 @@ body {
 /* ===============END Герой =========*/
 
 /* ===============Особенности =========*/
+
 .advantage-title {
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--brand-title-color);
@@ -113,6 +122,9 @@ body {
 /* ===============END Особенности =========*/
 
 /*===============Команда =========*/
+.team {
+  background-color: var(--light-theame-color);
+}
 .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -137,11 +149,11 @@ body {
   background-color: var(--dark-theame-color);
 }
 .footer-logo {
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 .footer-address-link {
-  color: #ffffff;
+  color: var(--white-color);
 }
 .address-link {
   color: rgba(255, 255, 255, 0.6);
@@ -153,7 +165,7 @@ body {
 
 /* =============FILTER========= */
 .filtr-button {
-  background: #f5f4fa;
+  background: var(--light-theame-color);
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
@@ -167,7 +179,7 @@ body {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  color: #ffffff;
+  color: var(--white-color);
 }
 /* =============END FILTER========= */
 
