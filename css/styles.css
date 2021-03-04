@@ -24,10 +24,12 @@ html {
 body {
   font-family: var(--font-family-main);
   color: var(--brand-text-color);
+  background-color: var(--white-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin: 0;
 }
 
 /* ==============COMPONENTS========== */
